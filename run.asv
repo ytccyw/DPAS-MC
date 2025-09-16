@@ -1,0 +1,18 @@
+clear
+warning off
+addpath("function\");addpath("measure\");addpath("tensor\")
+lambda=1;
+alpha=0.01;
+c=0.35;
+d=10;
+datasetname='Caltech101-all_fea';
+load(datasetname)
+V=length(X);
+for v=1:V
+    liemin = min(X{v},[],1);liemax = max(X{v},[],1);X{v}=rescale(X{v},"InputMin",liemin,"InputMax",liemax);
+end
+
+
+[RES,~] = DPAS_C(X,Y,lambda,alpha,c,d,maolv);%ACC nmi Fscore Precision AR Purity Recall
+fprintf('ACC = %f, NMI = %f, PUR = %f, F = %f\n', RES(1), RES(2), RES(6), RES(3));
+
