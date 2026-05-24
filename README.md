@@ -1,6 +1,4 @@
-## Citation
-
-> **Density Peak Anchor Selection for Multi-View Clustering**
+## **Density Peak Anchor Selection for Multi-View Clustering**
 > 
 > *IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)*, 2026.
 
