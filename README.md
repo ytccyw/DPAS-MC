@@ -10,6 +10,8 @@ If you find our work useful in your research, please consider citing:
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
   title={Density Peak Anchor Selection for Multi-View Clustering}, 
   year={2026},
-  pages={1-1},
+  volume={36},
+  number={9},
+  pages={13447-13459},
   doi={10.1109/TCSVT.2026.3696011}
 }
